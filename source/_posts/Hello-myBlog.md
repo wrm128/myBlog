@@ -12,3 +12,6 @@ tags:
 今天我的Blog终于落成了！虽然还差一个域名...后面再补...😅
 
 ![little prince](/images/little_prince.jpg)
+
+参考：
+- [GitHub+Hexo 搭建个人网站详细教程](https://zhuanlan.zhihu.com/p/26625249)
