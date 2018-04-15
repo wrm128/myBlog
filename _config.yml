@@ -5,7 +5,7 @@
 # Site
 title: Rice's Blog
 subtitle: 半亩花田
-description:
+description: Action speaks louder than words.
 author: Rice Wang
 avatar: /images/rice.jpg 
 language: zh-Hans
@@ -88,11 +88,19 @@ plugin:
 
 # Feed Atom
 feed:
-type: atom
-path: atom.xml
-limit: 20
-hub:
-content:
-content_limit: 140
-content_limit_delim: ' '
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
 
+# Search站内搜索
+search:
+  path: search.xml
+  field: post
+
+# SiteMap
+sitemap:
+  path: sitemap.xml
