@@ -85,6 +85,8 @@ branch: master
 # RSS订阅支持
 plugin:
 - hexo-generator-feed
+- hexo-generator-search
+- hexo-generator-seo-friendly-sitemap 
 
 # Feed Atom
 feed:
