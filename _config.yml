@@ -3,12 +3,13 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
+title: Rice's Blog
+subtitle: 半亩花田
 description:
-author: John Doe
-language:
-timezone:
+author: Ruimin Wang
+avatar: /images/rice.jpg 
+language: zh-Hans
+timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
