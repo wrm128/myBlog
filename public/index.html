@@ -298,6 +298,191 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://wrm128.github.io/2018/04/22/Hexo-添加订阅、搜索和站点地图/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Rice Wang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/rice.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Rice's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/22/Hexo-添加订阅、搜索和站点地图/" itemprop="url">Hexo 添加订阅、搜索和站点地图</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-22T18:29:11+08:00">
+                2018-04-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/随笔/" itemprop="url" rel="index">
+                    <span itemprop="name">随笔</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>简单记录下如何给Hexo网站添加RSS订阅功能、站内搜索功能以及站点地图。这些功能都需要相应的插件支持(Hexo插件参见 <a href="https://hexo.io/plugins/)" target="_blank" rel="noopener">https://hexo.io/plugins/)</a>, 然后修改配置文件，<strong>最后需要重新部署</strong>。</p>
+<h2 id="添加RSS订阅功能"><a href="#添加RSS订阅功能" class="headerlink" title="添加RSS订阅功能"></a>添加RSS订阅功能</h2><ol>
+<li>安装插件<br><code>npm install hexo-generator-feed --save</code></li>
+<li>在站点配置文件<code>_config.yml</code>中追加如下代码：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">feed:</span><br><span class="line">  type: atom</span><br><span class="line">  path: atom.xml</span><br><span class="line">  limit: 20</span><br><span class="line">  hub:</span><br><span class="line">  content:</span><br><span class="line">  content_limit: 140</span><br><span class="line">  content_limit_delim: &apos; &apos;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<ul>
+<li>type - Feed type. (atom/rss2)</li>
+<li>path - Feed path. (Default: atom.xml/rss2.xml)</li>
+<li>limit - Maximum number of posts in the feed (Use 0 or false to show all posts)</li>
+<li>hub - URL of the PubSubHubbub hubs (Leave it empty if you don’t use it)</li>
+<li>content - (optional) set to ‘true’ to include the contents of the entire post in the feed.</li>
+<li>content_limit - (optional) Default length of post content used in summary. Only used, if content setting is false and no custom post description present.</li>
+<li>content_limit_delim - (optional) If content_limit is used to shorten post contents, only cut at the last occurrence of this delimiter before reaching the character limit. Not used by default.</li>
+</ul>
+<h2 id="添加站内搜索功能"><a href="#添加站内搜索功能" class="headerlink" title="添加站内搜索功能"></a>添加站内搜索功能</h2><ol>
+<li>安装插件<br><code>npm install hexo-generator-search --save</code></li>
+<li>在站点配置文件<code>_config.yml</code>中追加如下代码：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Search站内搜索</span><br><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<ul>
+<li>path - file path. By default is search.xml . If the file extension is .json, the output format will be JSON. Otherwise XML format file will be exported.</li>
+<li>field - the search scope you want to search, you can chose:<ul>
+<li>post (Default) - will only covers all the posts of your blog.</li>
+<li>page - will only covers all the pages of your blog.</li>
+<li>all - will covers all the posts and pages of your blog.</li>
+</ul>
+</li>
+</ul>
+<h2 id="添加站点地图-Sitemap"><a href="#添加站点地图-Sitemap" class="headerlink" title="添加站点地图(Sitemap)"></a>添加站点地图(Sitemap)</h2><p>Sitemap 可方便网站管理员通知搜索引擎他们网站上有哪些可供抓取的网页。最简单的Sitemap形式，就是XML文件，在其中列出网站中的网址以及关于每个网址的其他元数据（上次更新的时间、更改的频率以及相对于网站上其他网址的重要程度为何等），以便搜索引擎可以更加智能地抓取网站。</p>
+<p>简言之， Sitemap 对于搜索引擎优化(Search Engine Optimization，即SEO) 非常重要，在网站中加入 Sitemap 有利于搜索引擎的爬虫组件的抓取和收录网站内容。以下插件主要用于生成适用于谷歌和百度的sitemap文件。 </p>
+<h5 id="1-安装插件"><a href="#1-安装插件" class="headerlink" title="1. 安装插件"></a>1. 安装插件</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-sitemap --save // 生成sitemap.xml</span><br><span class="line">hexo-generator-seo-friendly-sitemap --save // seo优化sitemap.xml</span><br><span class="line">npm install hexo-generator-baidu-sitemap --save // 生成baidusitemap.xml</span><br></pre></td></tr></table></figure>
+<h5 id="2-在站点配置文件-config-yml中追加如下代码："><a href="#2-在站点配置文件-config-yml中追加如下代码：" class="headerlink" title="2. 在站点配置文件_config.yml中追加如下代码："></a>2. 在站点配置文件<code>_config.yml</code>中追加如下代码：</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># SiteMap</span><br><span class="line">sitemap:</span><br><span class="line">  path: sitemap.xml</span><br><span class="line">baidusitemap:</span><br><span class="line">  path: baidusitemap.xml</span><br></pre></td></tr></table></figure>
+<p>部署(<code>hexo g</code>)之后，如果public目录下生成了 sitemap.xml 和 baidusitemap.xml 就表示配置成功了。</p>
+<h5 id="3-验证网站，并提交sitemap文件"><a href="#3-验证网站，并提交sitemap文件" class="headerlink" title="3. 验证网站，并提交sitemap文件"></a>3. 验证网站，并提交sitemap文件</h5><p>在我们向搜索引擎提交 sitemap 之前，搜索引擎需要先验证我们对网站的所有权。两个搜索引擎的验证入口分别为:</p>
+<ul>
+<li><a href="https://www.google.com/webmasters/tools/home?hl=zh-CN" target="_blank" rel="noopener">Google Search Console</a></li>
+<li><a href="https://ziyuan.baidu.com/dashboard/index" target="_blank" rel="noopener">百度站长平台</a></li>
+</ul>
+<p>具体验证及提交方法请参考:</p>
+<ul>
+<li><a href="http://selfmaking.top/2017/01/01/hexo-%E7%B3%BB%E5%88%97%E6%95%99%E7%A8%8B-%E4%B8%89-%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%94%B6%E5%BD%95/" target="_blank" rel="noopener">hexo 系列教程: (三) 搜索引擎收录</a> </li>
+<li><a href="http://tengj.top/2016/03/14/hexo6seo/" target="_blank" rel="noopener">hexo干货系列: (六) hexo提交搜索引擎（百度+谷歌</a></li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://wrm128.github.io/2018/04/15/Hello-myBlog/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -611,7 +796,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
