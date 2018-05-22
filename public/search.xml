@@ -3,6 +3,29 @@
   
     
     <entry>
+      <title>201 principles of software development</title>
+      <link href="/2018/05/21/201-principles-of-software-development/"/>
+      <url>/2018/05/21/201-principles-of-software-development/</url>
+      <content type="html"><![CDATA[<h2 id="软件开发中的201条原则"><a href="#软件开发中的201条原则" class="headerlink" title="软件开发中的201条原则"></a>软件开发中的201条原则</h2><p>本文翻译自《201 principles of software development》</p><ol><li>不要重复造轮子</li><li>KISS(Keep It Simple, Stupid)原则，即 保持简洁和单纯</li><li>避免过多的特殊情况：如果需要考虑的特殊情况太多，说明设计或算法有问题</li><li>最小化计算机世界与现实世界的距离，即 在选择模型和方法时尽可能地模拟现实世界</li><li>保持设计的智能可控性，本质上是倡导分层设计，并提供多种视角 (-&gt;80)</li><li>保持概念完整性，包括数据结构的组织、模块间的通信方式、错误警告等等的一致性。即使是由多个人开发的系统，看起来也像一个人开发的一样。</li><li>概念错误比语法错误更重要、更难以排查。</li><li>松耦合，高内聚</li><li>为改变而设计，即 所作的设计必须能够适应变化的需求：模块化、可移植、可扩展、贴近现实(69)、智能可控(70)、概念完整(71)</li><li>设计需要考虑后期维护。就可维护性而言，架构的选择比算法和代码更重要。</li><li>设计需要考虑错误情况。尽量做到：<pre><code>1. 不引入错误2. 引入的错误很容易检测到3. 部署后依然存在的错误要么不重要，要么能够避免执行过程中出现灾难性问题</code></pre>有些具体方法可以帮助提高设计的鲁棒性：<pre><code>1. 不要遗漏任何一种状态，例如一个变量有4种取值，不要只检查其中的3种2. 预测尽可能多的“impossible”的情况，并给出恢复策略3. 为了排除引发灾难的情况，使用故障树(fault tree)分析预测不安全的情形</code></pre></li><li>构建通用性软件。通用性强的软件/组件一般运行会稍微慢一些。</li><li>构建灵活性软件。灵活性强的组件一般比通用性强的组件运行更高效。</li><li>使用高效的算法。要求设计者了解各种算法并能够进行算法复杂度分析。</li><li>模块规格说明应该包含用户需要的所有信息，不要加入用户不需要的任何信息。即模块化。</li><li>设计是多维度的，包括 打包(packaging, what is part of what), 分层(hierarchy, who needs whom), 调用(invocation, who invokes whom), 流程(processes)…</li><li></li><li></li><li></li><li></li><li></li><li></li></ol><blockquote><p>refer:《201 principles of software development》</p></blockquote>]]></content>
+      
+      <categories>
+          
+          <category> software engineering </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> software </tag>
+            
+            <tag> engineer </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>Hexo 添加订阅、搜索和站点地图</title>
       <link href="/2018/04/22/Hexo-%E6%B7%BB%E5%8A%A0%E8%AE%A2%E9%98%85%E3%80%81%E6%90%9C%E7%B4%A2%E5%92%8C%E7%AB%99%E7%82%B9%E5%9C%B0%E5%9B%BE/"/>
       <url>/2018/04/22/Hexo-%E6%B7%BB%E5%8A%A0%E8%AE%A2%E9%98%85%E3%80%81%E6%90%9C%E7%B4%A2%E5%92%8C%E7%AB%99%E7%82%B9%E5%9C%B0%E5%9B%BE/</url>
