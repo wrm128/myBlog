@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Rice&#39;s Blog</title>
+  
+  <subtitle>半亩花田</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://wrm128.github.io/"/>
+  <updated>2018-07-29T16:55:16.000Z</updated>
+  <id>https://wrm128.github.io/</id>
+  
+  <author>
+    <name>Rice Wang</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>《代码整洁之道》读书笔记</title>
+    <link href="https://wrm128.github.io/2018/07/14/%E3%80%8A%E4%BB%A3%E7%A0%81%E6%95%B4%E6%B4%81%E4%B9%8B%E9%81%93%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    <id>https://wrm128.github.io/2018/07/14/《代码整洁之道》读书笔记/</id>
+    <published>2018-07-14T15:55:02.000Z</published>
+    <updated>2018-07-29T16:55:16.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;[toc]&lt;/p&gt;
+&lt;p&gt;最近在阅读《Clean Code》，读书笔记记录于此。&lt;/p&gt;
+&lt;h2 id=&quot;什么样的代码是好代码？&quot;&gt;&lt;a href=&quot;#什么样的代码是好代码？&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="software engineering" scheme="https://wrm128.github.io/categories/software-engineering/"/>
+    
+    
+      <category term="software" scheme="https://wrm128.github.io/tags/software/"/>
+    
+      <category term="engineer" scheme="https://wrm128.github.io/tags/engineer/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>201 principles of software development</title>
+    <link href="https://wrm128.github.io/2018/05/21/201-principles-of-software-development/"/>
+    <id>https://wrm128.github.io/2018/05/21/201-principles-of-software-development/</id>
+    <published>2018-05-21T15:30:26.000Z</published>
+    <updated>2018-10-19T12:03:50.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;软件开发中的201条原则&quot;&gt;&lt;a href=&quot;#软件开发中的201条原则&quot; class=&quot;headerlink&quot; title=&quot;软件开发中的201条原则&quot;&gt;&lt;/a&gt;软件开发中的201条原则&lt;/h1&gt;&lt;p&gt;本文翻译自《201 principles of
+        
+      
+    
+    </summary>
+    
+      <category term="software engineering" scheme="https://wrm128.github.io/categories/software-engineering/"/>
+    
+    
+      <category term="software" scheme="https://wrm128.github.io/tags/software/"/>
+    
+      <category term="engineer" scheme="https://wrm128.github.io/tags/engineer/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo 添加订阅、搜索和站点地图</title>
+    <link href="https://wrm128.github.io/2018/04/22/Hexo-%E6%B7%BB%E5%8A%A0%E8%AE%A2%E9%98%85%E3%80%81%E6%90%9C%E7%B4%A2%E5%92%8C%E7%AB%99%E7%82%B9%E5%9C%B0%E5%9B%BE/"/>
+    <id>https://wrm128.github.io/2018/04/22/Hexo-添加订阅、搜索和站点地图/</id>
+    <published>2018-04-22T10:29:11.000Z</published>
+    <updated>2018-04-22T15:15:26.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;简单记录下如何给Hexo网站添加RSS订阅功能、站内搜索功能以及站点地图。这些功能都需要相应的插件支持(Hexo插件参见 &lt;a href=&quot;https://hexo.io/plugins/)&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="随笔" scheme="https://wrm128.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="Hexo" scheme="https://wrm128.github.io/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello 我的半亩花田</title>
+    <link href="https://wrm128.github.io/2018/04/15/Hello-myBlog/"/>
+    <id>https://wrm128.github.io/2018/04/15/Hello-myBlog/</id>
+    <published>2018-04-15T09:48:41.000Z</published>
+    <updated>2018-04-15T17:15:57.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;大二暑假在csdn上注册了自己的第一个博客，从写题解开始，零零碎碎记了一些东西，但并没有坚持更博～&lt;br&gt;研究生之后因为比较忙，更是任自己的博客成了一片荒地～直到找工作时，才又开始写题解～&lt;br&gt;很早以前就想要建一个自己的独立博客，然而却因为忙一推再推…好吧，明明就是太懒…
+        
+      
+    
+    </summary>
+    
+      <category term="随笔" scheme="https://wrm128.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://wrm128.github.io/2018/04/04/hello-world/"/>
+    <id>https://wrm128.github.io/2018/04/04/hello-world/</id>
+    <published>2018-04-04T12:18:41.000Z</published>
+    <updated>2018-04-15T17:14:29.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Hexo" scheme="https://wrm128.github.io/tags/Hexo/"/>
+    
+  </entry>
+  
+</feed>
