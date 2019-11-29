@@ -94,7 +94,7 @@
 <meta property="og:image" content="https://wrm128.github.io/images/flowcontrol/spark-backpressure.png">
 <meta property="og:image" content="https://wrm128.github.io/images/flink/flink-memory.png">
 <meta property="og:image" content="https://wrm128.github.io/images/flowcontrol/flink-backpressure.png">
-<meta property="og:updated_time" content="2019-11-29T16:25:38.161Z">
+<meta property="og:updated_time" content="2019-11-29T16:29:14.994Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="流控-背压">
 <meta name="twitter:description" content="流控流式计算系统中，任何中间节点的拥堵都可能会导致丢数据或系统雪崩，尤其是设计不够好的系统。设想这样一种数据流场景，A-&amp;gt;B-&amp;gt;C，B所依赖的外部存储挂了(redis/leveldb/rocksdb/hdfs)等，A-&amp;gt;B层开始堆积数据，上下游以rpc+内存的方式传输，计算集群可能会大批量的OOM，最终导致整个系统雪崩。 流控（Flow Control），顾名思义，即流量控制，常">
@@ -403,8 +403,7 @@
 <li>是一种特殊情况，阻塞住整个调用链（Callstack blocking）。之所以说这是一种特殊情况，是因为这种方式只适用于整个调用链都在一个线程上同步执行，这要求中间的各个operator都不能启动新的线程。在平常使用中这种应该是比较少见的，因为我们经常使用subscribeOn或observeOn来切换执行线程，而且有些复杂的operator本身也会内部启动新的线程来处理。另外，如果真的出现了完全同步的调用链，前面的1、2、3仍然有可能适用的，只不过这种阻塞的方式更简单，不需要额外的支持。</li>
 </ol>
 <p>下面简单介绍一下几种常见的流式系统中的<b>背压</b>机制。</p>
-<h1 id="Storm"><a href="#Storm" class="headerlink" title="Storm"></a>Storm</h1><p>Storm/Heron</p>
-<p>对于开启了acker机制的Storm程序，可以通过设置conf.setMaxSpoutPending参数来实现反压效果，如果下游组件(bolt)处理速度跟不上导致spout发送的tuple没有及时确认的数超过了参数设定的值，spout会停止发送数据，这种方式的缺点是很难调优conf.setMaxSpoutPending参数的设置以达到最好的反压效果，设小了会导致吞吐上不去，设大了会导致worker OOM；有震荡，数据流会处于一个颠簸状态，效果不如逐级反压；另外对于关闭acker机制的程序无效.</p>
+<h1 id="Storm"><a href="#Storm" class="headerlink" title="Storm"></a>Storm</h1><p>对于开启了acker机制的Storm程序，可以通过设置conf.setMaxSpoutPending参数来实现反压效果，如果下游组件(bolt)处理速度跟不上导致spout发送的tuple没有及时确认的数超过了参数设定的值，spout会停止发送数据，这种方式的缺点是很难调优conf.setMaxSpoutPending参数的设置以达到最好的反压效果，设小了会导致吞吐上不去，设大了会导致worker OOM；有震荡，数据流会处于一个颠簸状态，效果不如逐级反压；另外对于关闭acker机制的程序无效.</p>
 <p>Heron(新版storm)自动反压机制(Automatic Back Pressure)通过监控Bolt中的接收队列的负载情况，如果超过高水位就会将反压信息写入zk，zk上的watch就会通知该拓扑的所有worker进入反压，最后Spout停止发送数据，直到接收队列的负载降到低水位以下。这种方式存在的问题就是， 当下游出现阻塞时， 上游停止发送， 下游消除阻塞后，上游又开闸放水，过了一会儿，下游又阻塞，上游又限流， 如此反复， 整个数据流一直处在一个颠簸状态。具体实现：<a href="https://github.com/apache/storm/pull/700" target="_blank" rel="noopener">JIRA STORM-886</a></p>
 <p><img src="/images/flowcontrol/storm-backpressure.png" alt="storm backpressure"></p>
 <p>Jstorm的改进方案是逐级降速与放水来进行反压；另外，Jstorm没有引入zk，而是通过TopologyMaster来协调拓扑进行反压。</p>
