@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wrm128.github.io/"/>
-  <updated>2018-07-29T16:55:16.000Z</updated>
+  <updated>2019-11-29T11:21:12.071Z</updated>
   <id>https://wrm128.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Flink 调研</title>
+    <link href="https://wrm128.github.io/2019/11/29/Flink-%E8%B0%83%E7%A0%94/"/>
+    <id>https://wrm128.github.io/2019/11/29/Flink-调研/</id>
+    <published>2019-11-29T10:04:51.000Z</published>
+    <updated>2019-11-29T11:21:12.071Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;架构&quot;&gt;&lt;a href=&quot;#架构&quot; class=&quot;headerlink&quot; title=&quot;架构&quot;&gt;&lt;/a&gt;架构&lt;/h1&gt;&lt;p&gt;Flink集群启动后的架构如下图所示：&lt;br&gt;&lt;img src=&quot;/images/flink/flink-run.png&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="distributed computing" scheme="https://wrm128.github.io/categories/distributed-computing/"/>
+    
+    
+      <category term="Flink" scheme="https://wrm128.github.io/tags/Flink/"/>
+    
+      <category term="streaming system" scheme="https://wrm128.github.io/tags/streaming-system/"/>
+    
+  </entry>
   
   <entry>
     <title>《代码整洁之道》读书笔记</title>
