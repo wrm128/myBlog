@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wrm128.github.io/"/>
-  <updated>2019-11-29T16:29:14.994Z</updated>
+  <updated>2020-01-21T08:00:05.079Z</updated>
   <id>https://wrm128.github.io/</id>
   
   <author>
@@ -15,6 +15,48 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>IPC 管道(pipe)测试</title>
+    <link href="https://wrm128.github.io/2020/01/20/IPC-%E7%AE%A1%E9%81%93-pipe-%E6%B5%8B%E8%AF%95/"/>
+    <id>https://wrm128.github.io/2020/01/20/IPC-管道-pipe-测试/</id>
+    <published>2020-01-20T07:04:08.000Z</published>
+    <updated>2020-01-21T08:00:05.079Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;基础知识梳理&quot;&gt;&lt;a href=&quot;#基础知识梳理&quot; class=&quot;headerlink&quot; title=&quot;基础知识梳理&quot;&gt;&lt;/a&gt;基础知识梳理&lt;/h1&gt;&lt;h2 id=&quot;文件共享&quot;&gt;&lt;a href=&quot;#文件共享&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="OS" scheme="https://wrm128.github.io/categories/OS/"/>
+    
+    
+      <category term="IPC" scheme="https://wrm128.github.io/tags/IPC/"/>
+    
+      <category term="C/C++" scheme="https://wrm128.github.io/tags/C-C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Flink Forward Asia 参会总结</title>
+    <link href="https://wrm128.github.io/2019/11/30/Flink-Forward-Asia-%E5%8F%82%E4%BC%9A%E6%80%BB%E7%BB%93/"/>
+    <id>https://wrm128.github.io/2019/11/30/Flink-Forward-Asia-参会总结/</id>
+    <published>2019-11-29T16:40:32.000Z</published>
+    <updated>2019-11-29T16:40:32.896Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>流控-背压</title>
