@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://wrm128.github.io/about/index.html</loc>
+    
+    <lastmod>2021-02-17T13:32:00.807Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://wrm128.github.io/2018/04/15/hello-world/</loc>
     
     <lastmod>2020-11-01T13:10:16.932Z</lastmod>
@@ -82,13 +89,6 @@
     <loc>https://wrm128.github.io/categories/index.html</loc>
     
     <lastmod>2020-11-01T09:03:04.428Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wrm128.github.io/about/index.html</loc>
-    
-    <lastmod>2020-11-01T09:03:04.399Z</lastmod>
     
   </url>
   
