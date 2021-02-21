@@ -1,212 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-
-    
-  <url>
-    <loc>https://wrm128.github.io/2018/05/21/201-principles-of-software-development/</loc>
-    <lastmod>2021-02-21T11:34:58.869Z</lastmod>
-    <data>
-        <display>
-        <title>201 principles of software development</title>
-        <pubTime>2018-05-21T15:30:26.000Z</pubTime>
-        
-        <tag>software</tag>
-         
-        <tag>engineer</tag>
-         
-         
-           
-             
-              <breadCrumb title="software engineering" url="https://wrm128.github.io/categories/software-engineering/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-    
-  <url>
-    <loc>https://wrm128.github.io/2018/04/15/hello-world/</loc>
-    <lastmod>2020-11-01T13:10:16.932Z</lastmod>
-    <data>
-        <display>
-        <title>Hello World</title>
-        <pubTime>2018-04-15T05:48:41.000Z</pubTime>
-        
-        <tag>Hexo</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
   <url>
     <loc>https://wrm128.github.io/2020/11/01/Spark-Streaming/</loc>
-    <lastmod>2020-11-01T12:56:34.346Z</lastmod>
-    <data>
-        <display>
-        <title>Spark Streaming</title>
-        <pubTime>2020-11-01T12:54:59.000Z</pubTime>
-        
-        <tag>Spark</tag>
-         
-        <tag>streaming system</tag>
-         
-         
-           
-             
-              <breadCrumb title="分布式计算" url="https://wrm128.github.io/categories/%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://wrm128.github.io/2019/11/29/%E6%B5%81%E6%8E%A7-%E8%83%8C%E5%8E%8B/</loc>
-    <lastmod>2020-11-01T09:03:09.883Z</lastmod>
-    <data>
-        <display>
-        <title>流控-背压</title>
-        <pubTime>2019-11-29T12:03:40.000Z</pubTime>
-        
-        <tag>Flink</tag>
-         
-        <tag>流控</tag>
-         
-        <tag>背压</tag>
-         
-         
-           
-             
-              <breadCrumb title="分布式计算" url="https://wrm128.github.io/categories/%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://wrm128.github.io/2018/07/14/%E3%80%8A%E4%BB%A3%E7%A0%81%E6%95%B4%E6%B4%81%E4%B9%8B%E9%81%93%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2020-11-01T09:03:08.588Z</lastmod>
-    <data>
-        <display>
-        <title>《代码整洁之道》读书笔记</title>
-        <pubTime>2018-07-14T15:55:02.000Z</pubTime>
-        
-        <tag>software</tag>
-         
-        <tag>engineer</tag>
-         
-         
-           
-             
-              <breadCrumb title="software engineering" url="https://wrm128.github.io/categories/software-engineering/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
+    <lastmod>2021-02-21</lastmod>
+  </url>
   <url>
     <loc>https://wrm128.github.io/2020/01/20/IPC-%E7%AE%A1%E9%81%93-pipe-%E6%B5%8B%E8%AF%95/</loc>
-    <lastmod>2020-11-01T09:03:08.289Z</lastmod>
-    <data>
-        <display>
-        <title>IPC 管道(pipe)测试</title>
-        <pubTime>2020-01-20T07:04:08.000Z</pubTime>
-        
-        <tag>IPC</tag>
-         
-        <tag>C/C++</tag>
-         
-         
-           
-             
-              <breadCrumb title="OS" url="https://wrm128.github.io/categories/OS/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://wrm128.github.io/2018/04/22/Hexo-%E6%B7%BB%E5%8A%A0%E8%AE%A2%E9%98%85%E3%80%81%E6%90%9C%E7%B4%A2%E5%92%8C%E7%AB%99%E7%82%B9%E5%9C%B0%E5%9B%BE/</loc>
-    <lastmod>2020-11-01T09:03:08.146Z</lastmod>
-    <data>
-        <display>
-        <title>Hexo 添加订阅、搜索和站点地图</title>
-        <pubTime>2018-04-22T10:29:11.000Z</pubTime>
-        
-        <tag>Hexo</tag>
-         
-         
-           
-             
-              <breadCrumb title="随笔" url="https://wrm128.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
+    <lastmod>2021-02-21</lastmod>
+  </url>
   <url>
     <loc>https://wrm128.github.io/2018/04/15/Hello-myBlog/</loc>
-    <lastmod>2020-11-01T09:03:07.579Z</lastmod>
-    <data>
-        <display>
-        <title>Hello 我的半亩花田</title>
-        <pubTime>2018-04-15T09:48:41.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="随笔" url="https://wrm128.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
+    <lastmod>2021-02-21</lastmod>
+  </url>
+  <url>
+    <loc>https://wrm128.github.io/2018/04/15/hello-world/</loc>
+    <lastmod>2021-02-21</lastmod>
+  </url>
+  <url>
+    <loc>https://wrm128.github.io/2018/04/22/Hexo-%E6%B7%BB%E5%8A%A0%E8%AE%A2%E9%98%85%E3%80%81%E6%90%9C%E7%B4%A2%E5%92%8C%E7%AB%99%E7%82%B9%E5%9C%B0%E5%9B%BE/</loc>
+    <lastmod>2021-02-21</lastmod>
+  </url>
   <url>
     <loc>https://wrm128.github.io/2019/11/29/Flink-%E8%B0%83%E7%A0%94/</loc>
-    <lastmod>2020-11-01T09:03:07.216Z</lastmod>
-    <data>
-        <display>
-        <title>Flink 调研</title>
-        <pubTime>2019-11-29T10:04:51.000Z</pubTime>
-        
-        <tag>streaming system</tag>
-         
-        <tag>Flink</tag>
-         
-         
-           
-             
-              <breadCrumb title="分布式计算" url="https://wrm128.github.io/categories/%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-    
+    <lastmod>2021-02-21</lastmod>
+  </url>
   <url>
     <loc>https://wrm128.github.io/2019/11/30/Flink-Forward-Asia-%E5%8F%82%E4%BC%9A%E6%80%BB%E7%BB%93/</loc>
-    <lastmod>2020-11-01T09:03:06.660Z</lastmod>
-    <data>
-        <display>
-        <title>Flink Forward Asia 参会总结</title>
-        <pubTime>2019-11-29T16:40:32.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-</urlset>
+    <lastmod>2021-02-21</lastmod>
+  </url>
+  <url>
+    <loc>https://wrm128.github.io/2018/05/21/201-principles-of-software-development/</loc>
+    <lastmod>2021-02-21</lastmod>
+  </url>
+  <url>
+    <loc>https://wrm128.github.io/2018/07/14/%E3%80%8A%E4%BB%A3%E7%A0%81%E6%95%B4%E6%B4%81%E4%B9%8B%E9%81%93%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2021-02-21</lastmod>
+  </url>
+  <url>
+    <loc>https://wrm128.github.io/2019/11/29/%E6%B5%81%E6%8E%A7-%E8%83%8C%E5%8E%8B/</loc>
+    <lastmod>2021-02-21</lastmod>
+  </url>
+</urlset> 
