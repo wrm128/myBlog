@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://wrm128.github.io/2018/05/21/201-principles-of-software-development/</loc>
+    
+    <lastmod>2021-02-21T12:55:18.164Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://wrm128.github.io/about/index.html</loc>
     
     <lastmod>2021-02-21T12:23:01.654Z</lastmod>
@@ -61,13 +68,6 @@
     <loc>https://wrm128.github.io/2019/11/30/Flink-Forward-Asia-%25E5%258F%2582%25E4%25BC%259A%25E6%2580%25BB%25E7%25BB%2593/</loc>
     
     <lastmod>2021-02-21T12:23:01.584Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wrm128.github.io/2018/05/21/201-principles-of-software-development/</loc>
-    
-    <lastmod>2021-02-21T12:23:01.571Z</lastmod>
     
   </url>
   
