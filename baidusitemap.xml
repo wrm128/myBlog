@@ -3,6 +3,28 @@
 
 
     
+  <url>
+    <loc>https://wrm128.github.io/2018/05/21/201-principles-of-software-development/</loc>
+    <lastmod>2021-02-21T11:34:58.869Z</lastmod>
+    <data>
+        <display>
+        <title>201 principles of software development</title>
+        <pubTime>2018-05-21T15:30:26.000Z</pubTime>
+        
+        <tag>software</tag>
+         
+        <tag>engineer</tag>
+         
+         
+           
+             
+              <breadCrumb title="software engineering" url="https://wrm128.github.io/categories/software-engineering/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
     
   <url>
     <loc>https://wrm128.github.io/2018/04/15/hello-world/</loc>
@@ -29,9 +51,9 @@
         <title>Spark Streaming</title>
         <pubTime>2020-11-01T12:54:59.000Z</pubTime>
         
-        <tag>streaming system</tag>
-         
         <tag>Spark</tag>
+         
+        <tag>streaming system</tag>
          
          
            
@@ -157,9 +179,9 @@
         <title>Flink 调研</title>
         <pubTime>2019-11-29T10:04:51.000Z</pubTime>
         
-        <tag>Flink</tag>
-         
         <tag>streaming system</tag>
+         
+        <tag>Flink</tag>
          
          
            
@@ -182,28 +204,6 @@
         
          
            
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://wrm128.github.io/2018/05/21/201-principles-of-software-development/</loc>
-    <lastmod>2020-11-01T09:03:06.223Z</lastmod>
-    <data>
-        <display>
-        <title>201 principles of software development</title>
-        <pubTime>2018-05-21T15:30:26.000Z</pubTime>
-        
-        <tag>software</tag>
-         
-        <tag>engineer</tag>
-         
-         
-           
-             
-              <breadCrumb title="software engineering" url="https://wrm128.github.io/categories/software-engineering/"/>
-          
         </display>
     </data>
     </url>
