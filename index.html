@@ -400,7 +400,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-02-28 16:10:10" itemprop="dateModified" datetime="2021-02-28T16:10:10+08:00">2021-02-28</time>
+                <time title="Modified: 2021-02-28 19:22:27" itemprop="dateModified" datetime="2021-02-28T19:22:27+08:00">2021-02-28</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -474,7 +474,17 @@
 <pre><code>- https://www.zhihu.com/question/310212569/answer/581672480
 - https://www.infoq.cn/article/MHrhw6x5qK_owazEhEw8
 - https://zhuanlan.zhihu.com/p/61167127
-</code></pre><h2 id="4-Lyft-基于Apache-Flink的大规模准实时数据分析平台"><a href="#4-Lyft-基于Apache-Flink的大规模准实时数据分析平台" class="headerlink" title="4. Lyft 基于Apache Flink的大规模准实时数据分析平台"></a>4. Lyft 基于Apache Flink的大规模准实时数据分析平台</h2><h1 id="分会场"><a href="#分会场" class="headerlink" title="分会场"></a>分会场</h1><h2 id="【实时数仓】"><a href="#【实时数仓】" class="headerlink" title="【实时数仓】"></a>【实时数仓】</h2><h3 id="1-美团点评基于-Apache-Flink-的实时数仓平台实践"><a href="#1-美团点评基于-Apache-Flink-的实时数仓平台实践" class="headerlink" title="1. 美团点评基于 Apache Flink 的实时数仓平台实践"></a>1. 美团点评基于 Apache Flink 的实时数仓平台实践</h3><p><img src="/images/flink/forward2019/meituan.RealTimeComputeArch.png" alt="MeiTuan.RealTimeComputeArch"><br><img src="/images/flink/forward2019/meituan.RealTimeDataWarehouse.png" alt="MeiTuan.RealTimeDataWarehouse"></p>
+- http://pravega.io/docs/latest/pravega-concepts/
+</code></pre><h2 id="4-Lyft-基于Apache-Flink的大规模准实时数据分析平台"><a href="#4-Lyft-基于Apache-Flink的大规模准实时数据分析平台" class="headerlink" title="4. Lyft 基于Apache Flink的大规模准实时数据分析平台"></a>4. Lyft 基于Apache Flink的大规模准实时数据分析平台</h2><p>主议题的最后一场是 Flink 实践，是由 Lyft 带来的大规模准实时数据分析平台的分享。这里所说的准实时，指端到端数据延迟不超过 5 分钟，在 Lyft 内部主要用于数据交互式查询。Lyft主要有以下流数据场景：</p>
+<p><img src="/images/flink/forward2019/Lyft.scenarios.png" alt="Lyft.Scenarios"></p>
+<p>下图是 Lyft 准实时平台架构图：<br><img src="/images/flink/forward2019/Lyft.arch.png" alt="Lyft.Arch"><br><img src="/images/flink/forward2019/Lyft.DataIngestion.png" alt="Lyft.DataIngestion"></p>
+<p>Flink 在整个架构中是用来做流数据注入的，Flink 向 AWS S3 以 Parquet 的格式持久化数据，并以这些原始数据为基础，进行多级 non-blocking 的ETL 加工（压缩去重），建立实时数仓，用于交互式数据查询。</p>
+<p>在这个分享中印象深刻的几点：</p>
+<pre><code>(1) Flink 的高效性。据 Lyft 的大佬讲，这个新的平台相较于先前基于 Kinesis Client 的 ingestion 相比较，仅数据注入部分的集群就缩减了 10%，所以他们对 Flink 的高效性是非常认可的。
+(2) Lyft 也提到，他们花了蛮多精力基于 Flink 的 StreamingFileSink 来解决 Flink 和 ETL 之间 watermark 的同步问题。其实我很希望他们能分享一下为何压缩去重（ETL）部分不也用 Flink 来做。如果是技术上的问题可以帮助 Flink 更好的完善自己。
+(3) Lyft 提到 Flink 的重启和部署会对 SLO 造成延迟影响，subtask 停滞会造成整个 pipeline 的停滞以及期望 Flink 能够有一套在 Kubernetes 环境下运行的方案。其实这里提到的几点也在其他的几场企业实践分享中被提到，这些也是当前 Flink 亟待解决的几大痛点。
+</code></pre><p>【关于Flink在failover后的拉起和恢复开销太大的问题，好几个公司都提到了，dstream3/streaming-framework比flink做的要好，可以原地拉起和恢复，<br>而无需从源端进行数据回灌】</p>
+<h1 id="分会场"><a href="#分会场" class="headerlink" title="分会场"></a>分会场</h1><h2 id="【实时数仓】"><a href="#【实时数仓】" class="headerlink" title="【实时数仓】"></a>【实时数仓】</h2><h3 id="1-美团点评基于-Apache-Flink-的实时数仓平台实践"><a href="#1-美团点评基于-Apache-Flink-的实时数仓平台实践" class="headerlink" title="1. 美团点评基于 Apache Flink 的实时数仓平台实践"></a>1. 美团点评基于 Apache Flink 的实时数仓平台实践</h3><p><img src="/images/flink/forward2019/meituan.RealTimeComputeArch.png" alt="MeiTuan.RealTimeComputeArch"><br><img src="/images/flink/forward2019/meituan.RealTimeDataWarehouse.png" alt="MeiTuan.RealTimeDataWarehouse"></p>
 <h3 id="2-小米流式平台架构演进与实践"><a href="#2-小米流式平台架构演进与实践" class="headerlink" title="2. 小米流式平台架构演进与实践"></a>2. 小米流式平台架构演进与实践</h3><p><img src="/images/flink/forward2019/xiaomi.RealTimeDataWarehouse.png" alt="Xiaomi.RealTimeDataWarehouse"></p>
 <h3 id="3-OPPO-基于-Apache-Flink-的实时数仓实践"><a href="#3-OPPO-基于-Apache-Flink-的实时数仓实践" class="headerlink" title="3. OPPO 基于 Apache Flink 的实时数仓实践"></a>3. OPPO 基于 Apache Flink 的实时数仓实践</h3><p><img src="/images/flink/forward2019/oppo.RealTimeDataWarehouse.png" alt="OPPO.RealTimeDataWarehouse"></p>
 <p>从传统的hdfs-&gt;hive模式转化为kafka-&gt;flink模式</p>
