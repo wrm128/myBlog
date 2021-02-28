@@ -400,7 +400,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-02-28 19:49:59" itemprop="dateModified" datetime="2021-02-28T19:49:59+08:00">2021-02-28</time>
+                <time title="Modified: 2021-02-28 19:54:25" itemprop="dateModified" datetime="2021-02-28T19:54:25+08:00">2021-02-28</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -423,7 +423,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>2019.11.28～2019.11.29 参加了Flink Forward Asia 2019大会，大家对实时计算热情很高，参会人数及企业都很多。会议一共持续一天半，第一天上午<br>是主会场，第一天下午和第二天上午是分会场，分会场的话有核心技术、企业实践、实时数仓、开源大数据生态、人工智能五个分会场并行，我主<br>要穿梭在核心技术和实时数仓两个分会场。下面先简单介绍下Flink的前世今生，以及会场上我听的几个topic.</p>
+          <p>2019.11.28～2019.11.29 参加了Flink Forward Asia 2019大会，大家对实时计算热情很高，参会人数及企业都很多。会议一共持续一天半，第一天上午是主会场，第一天下午和第二天上午是分会场，分会场的话有核心技术、企业实践、实时数仓、开源大数据生态、人工智能五个分会场并行，我主要穿梭在核心技术和实时数仓两个分会场。下面先简单介绍下Flink的前世今生，以及会场上我听的几个topic.</p>
 <h1 id="Flink-发展历程"><a href="#Flink-发展历程" class="headerlink" title="Flink 发展历程"></a>Flink 发展历程</h1><ol>
 <li>Apache Flink项目在捐献给Apache之前，是由柏林工业大学博士生发起的项目，当时的Flink系统还是一个基于流式Runtime的批处理引擎，主要解决的也是批处理的问题。</li>
 <li>2014年，Flink被捐献给Apache，并迅速成为Apache 的顶级项目之一。</li>
@@ -437,7 +437,7 @@
 <p><b>引擎一体化</b>和<b>生态多元化</b>是 Flink 一以贯之的发展策略。引擎一体化指的是离线（batch），实时（streaming）和在线（application）应用在执行层面的一体化。生态多元化指的是对 AI 生态环境的搭建和对更多生态的支持，包括 Hive，Python，Kubernetes 等。</p>
 <h1 id="主会场"><a href="#主会场" class="headerlink" title="主会场"></a>主会场</h1><h2 id="1-Stateful-Functions：Building-general-purpose-Applications-and-Services-on-Apache-Flink"><a href="#1-Stateful-Functions：Building-general-purpose-Applications-and-Services-on-Apache-Flink" class="headerlink" title="1. Stateful Functions：Building general-purpose Applications and Services on Apache Flink"></a>1. Stateful Functions：Building general-purpose Applications and Services on Apache Flink</h2><p>Stephan 继续推广他对 Flink 作为应用服务场景（Applications and Services）通用引擎的展望和规划。简而言之，他认为 Flink 除了能够做到批流一体，Flink 框架对于事件驱动的在线应用也可以有效甚至更好的支持，如下图所示：</p>
 <p><img src="/images/flink/forward2019/flink.StatefulStreamProcessing.png" alt="Flink Analytics and Applications on Streaming Data"></p>
-<p>云上对此类问题的一种主流的解决方案便是FaaS。FaaS是Function as a Service的缩写,可以简单理解为功能服务化。FaaS提供了一种比微服务更加服务<br>碎片化的软件架构范式。FaaS可以让研发只需要关注业务代码逻辑，不再关注技术架构。以微服务为核心的前后端分离，业务积木装配式技术架<br>构。但目前仍有以下几个方面的痛点：</p>
+<p>云上对此类问题的一种主流的解决方案便是FaaS。FaaS是Function as a Service的缩写,可以简单理解为功能服务化。FaaS提供了一种比微服务更加服务碎片化的软件架构范式。FaaS可以让研发只需要关注业务代码逻辑，不再关注技术架构。以微服务为核心的前后端分离，业务积木装配式技术架构。但目前仍有以下几个方面的痛点：</p>
 <pre><code>（1）Bottlenecked by state access &amp; I/O
 （2）State Consistency Problem
 （3）Scalability of Database (storing the states)
